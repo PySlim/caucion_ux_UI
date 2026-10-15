@@ -1,0 +1,174 @@
+/* CAUCIÓN Design System V1.2 — Corporate Refined
+   Orden: Tailwind → tokens generados (primitivos, semánticos, componente, tema, densidad) → base. */
+@import "tailwindcss";
+@import "../tokens/generated/tokens.css";
+
+/* Tailwind consume SOLO tokens semánticos y de componente. Se elimina la paleta
+   y los radios por defecto: ningún componente puede usar un valor fuera del sistema. */
+@theme inline {
+  --color-*: initial;
+  --color-canvas: var(--bg-canvas);
+  --color-surface: var(--bg-surface);
+  --color-subtle: var(--bg-subtle);
+  --color-muted: var(--bg-muted);
+  --color-selected: var(--bg-selected);
+  --color-nav: var(--bg-nav);
+  --color-nav-hover: var(--bg-nav-hover);
+  --color-nav-active: var(--bg-nav-active);
+  --color-overlay: var(--bg-overlay);
+  --color-inverse: var(--bg-inverse);
+
+  --color-fg: var(--fg-default);
+  --color-fg-muted: var(--fg-muted);
+  --color-fg-subtle: var(--fg-subtle);
+  --color-fg-on-nav: var(--fg-on-nav);
+  --color-fg-on-nav-muted: var(--fg-on-nav-muted);
+  --color-fg-on-action: var(--fg-on-action);
+  --color-fg-on-inverse: var(--fg-on-inverse);
+  --color-fg-on-status: var(--fg-on-status);
+  --color-fg-link: var(--fg-link);
+  --color-fg-brand: var(--fg-brand);
+
+  --color-line: var(--border-default);
+  --color-line-strong: var(--border-strong);
+  --color-line-nav: var(--border-nav);
+  --color-focus: var(--border-focus);
+
+  --color-nav-indicator: var(--nav-indicator);
+  --color-nav-badge: var(--nav-badge-bg);
+  --color-nav-badge-fg: var(--nav-badge-fg);
+
+  --color-action: var(--action);
+  --color-action-hover: var(--action-hover);
+  --color-action-active: var(--action-active);
+  --color-action-soft: var(--action-soft);
+  --color-action-fg: var(--action-fg);
+  --color-accent: var(--accent);
+  --color-accent-fg: var(--accent-fg);
+  --color-accent-soft: var(--accent-soft);
+
+  --color-success: var(--success);
+  --color-success-soft: var(--success-soft);
+  --color-warning: var(--warning);
+  --color-warning-soft: var(--warning-soft);
+  --color-danger: var(--danger);
+  --color-danger-hover: var(--danger-hover);
+  --color-danger-soft: var(--danger-soft);
+  --color-info: var(--info);
+  --color-info-soft: var(--info-soft);
+  --color-review: var(--review);
+  --color-review-soft: var(--review-soft);
+  --color-neutral: var(--neutral);
+  --color-neutral-soft: var(--neutral-soft);
+  --color-transparent: transparent;
+
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-mono);
+
+  --text-*: initial;
+  --text-2xs: var(--p-font-size-11);  --text-2xs--line-height: var(--p-font-leading-16);
+  --text-xs: var(--p-font-size-12);   --text-xs--line-height: var(--p-font-leading-16);
+  --text-sm: var(--p-font-size-13);   --text-sm--line-height: var(--p-font-leading-18);
+  --text-base: var(--p-font-size-14); --text-base--line-height: var(--p-font-leading-20);
+  --text-md: var(--p-font-size-16);   --text-md--line-height: var(--p-font-leading-24);
+  --text-lg: var(--p-font-size-18);   --text-lg--line-height: var(--p-font-leading-26);
+  --text-xl: var(--p-font-size-22);   --text-xl--line-height: var(--p-font-leading-28);
+
+  /* Radios: escala primitiva + roles de componente */
+  --radius-*: initial;
+  --radius-xs: var(--p-radius-xs);
+  --radius-sm: var(--p-radius-sm);
+  --radius-md: var(--p-radius-md);
+  --radius-lg: var(--p-radius-lg);
+  --radius-xl: var(--p-radius-xl);
+  --radius-full: var(--p-radius-full);
+  --radius-control: var(--radius-control);
+  --radius-card: var(--radius-card);
+  --radius-overlay: var(--radius-overlay);
+  --radius-badge: var(--radius-badge);
+  --radius-check: var(--radius-check);
+  --radius-tooltip: var(--radius-tooltip);
+
+  /* Elevación por rol */
+  --shadow-*: initial;
+  --shadow-card: var(--shadow-card);
+  --shadow-popover: var(--shadow-popover);
+  --shadow-modal: var(--shadow-modal);
+
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1440px;
+}
+
+/* Estados forzados para documentar hover y foco en el Visual Lab (.is-hover / .is-focus). */
+@custom-variant hv {
+  &:hover:not(:disabled, [aria-disabled="true"]) { @slot; }
+  &.is-hover { @slot; }
+}
+@custom-variant fv {
+  &:focus-visible { @slot; }
+  &.is-focus { @slot; }
+}
+
+/* ---------- Roles tipográficos (valores en tokens.json → typography) ---------- */
+@utility t-module    { font-size: var(--type-module-size); line-height: var(--type-module-leading); font-weight: var(--type-module-weight); letter-spacing: var(--type-module-tracking); text-transform: uppercase; }
+@utility t-page      { font-size: var(--type-page-size); line-height: var(--type-page-leading); font-weight: var(--type-page-weight); letter-spacing: var(--type-page-tracking); text-wrap: balance; }
+@utility t-section   { font-size: var(--type-section-size); line-height: var(--type-section-leading); font-weight: var(--type-section-weight); }
+@utility t-sub       { font-size: var(--type-sub-size); line-height: var(--type-sub-leading); font-weight: var(--type-sub-weight); }
+@utility t-body      { font-size: var(--type-body-size); line-height: var(--type-body-leading); font-weight: var(--type-body-weight); }
+@utility t-table     { font-size: var(--type-table-size); line-height: var(--type-table-leading); font-weight: var(--type-table-weight); }
+@utility t-label     { font-size: var(--type-label-size); line-height: var(--type-label-leading); font-weight: var(--type-label-weight); }
+@utility t-help      { font-size: var(--type-help-size); line-height: var(--type-help-leading); font-weight: var(--type-help-weight); }
+@utility t-caption   { font-size: var(--type-caption-size); line-height: var(--type-caption-leading); font-weight: var(--type-caption-weight); }
+@utility t-amount-lg { font-size: var(--type-amount-lg-size); line-height: var(--type-amount-lg-leading); font-weight: var(--type-amount-lg-weight); letter-spacing: var(--type-amount-lg-tracking); font-variant-numeric: tabular-nums lining-nums; }
+@utility t-amount    { font-size: var(--type-amount-size); line-height: var(--type-amount-leading); font-weight: var(--type-amount-weight); font-variant-numeric: tabular-nums lining-nums; }
+@utility t-ref       { font-family: var(--font-mono); font-size: var(--type-ref-size); font-variant-numeric: tabular-nums; }
+@utility t-wordmark  { font-size: var(--p-font-size-16); line-height: 1; font-weight: var(--p-font-weight-semibold); letter-spacing: 0.14em; }
+@utility tnum        { font-variant-numeric: tabular-nums lining-nums; }
+
+@layer base {
+  html, body, #root { height: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg-canvas);
+    color: var(--fg-default);
+    font-family: var(--font-sans);
+    font-size: var(--type-body-size);
+    line-height: var(--type-body-leading);
+    -webkit-font-smoothing: antialiased;
+    text-size-adjust: 100%;
+  }
+  [data-caucion-theme] { color: var(--fg-default); }
+  :focus-visible { outline: var(--focus-width) solid var(--border-focus); outline-offset: var(--focus-offset); }
+  .on-nav :focus-visible { outline-color: var(--fg-on-nav); }
+  ::selection { background: var(--action-soft); }
+  button { cursor: pointer; }
+  button:disabled { cursor: not-allowed; }
+  input::placeholder, textarea::placeholder { color: var(--fg-muted); opacity: 1; }
+  * { scrollbar-width: thin; scrollbar-color: var(--border-strong) transparent; }
+}
+
+.is-focus { outline: var(--focus-width) solid var(--border-focus); outline-offset: var(--focus-offset); }
+
+/* Movimiento discreto; se anula con prefers-reduced-motion */
+@keyframes sk { 0%,100% { opacity: 1 } 50% { opacity: .55 } }
+.skeleton { background: var(--bg-muted); border-radius: var(--radius-badge); animation: sk 1.4s ease-in-out infinite; }
+@keyframes spin { to { transform: rotate(360deg) } }
+.spin { animation: spin .8s linear infinite; }
+@keyframes rise { from { opacity: 0; transform: translateY(6px) } to { opacity: 1; transform: none } }
+.rise { animation: rise .16s ease-out; }
+@keyframes slide-in { from { transform: translateX(24px); opacity: .6 } to { transform: none; opacity: 1 } }
+.slide-in { animation: slide-in .18s ease-out; }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .001ms !important; animation-iteration-count: 1 !important; transition-duration: .001ms !important; }
+}
+
+/* Tabla: cabecera fija y cebra opcional */
+.dt thead th { position: sticky; top: 0; z-index: 1; }
+.dt[data-zebra="true"] tbody tr:nth-child(even) td { background: var(--bg-subtle); }
+
+/* Gutter lateral del workspace */
+.gutter { padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+@media (min-width: 768px) { .gutter { padding-left: max(24px, env(safe-area-inset-left, 0px)); padding-right: max(24px, env(safe-area-inset-right, 0px)); } }

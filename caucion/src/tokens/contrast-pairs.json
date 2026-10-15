@@ -1,0 +1,266 @@
+[
+ {
+  "fg": "fg-default",
+  "bg": "bg-canvas",
+  "min": 4.5,
+  "desc": "Texto principal / fondo"
+ },
+ {
+  "fg": "fg-default",
+  "bg": "bg-surface",
+  "min": 4.5,
+  "desc": "Texto principal / superficie"
+ },
+ {
+  "fg": "fg-muted",
+  "bg": "bg-canvas",
+  "min": 4.5,
+  "desc": "Texto secundario / fondo"
+ },
+ {
+  "fg": "fg-muted",
+  "bg": "bg-surface",
+  "min": 4.5,
+  "desc": "Texto secundario / superficie"
+ },
+ {
+  "fg": "fg-muted",
+  "bg": "bg-subtle",
+  "min": 4.5,
+  "desc": "Cabecera de tabla"
+ },
+ {
+  "fg": "fg-muted",
+  "bg": "bg-muted",
+  "min": 4.5,
+  "desc": "Badge neutral"
+ },
+ {
+  "fg": "fg-link",
+  "bg": "bg-surface",
+  "min": 4.5,
+  "desc": "Enlace"
+ },
+ {
+  "fg": "action-fg",
+  "bg": "action-soft",
+  "min": 4.5,
+  "desc": "Texto de acción / fondo suave"
+ },
+ {
+  "fg": "action-fg",
+  "bg": "bg-surface",
+  "min": 4.5,
+  "desc": "Botón terciario"
+ },
+ {
+  "fg": "fg-on-action",
+  "bg": "action",
+  "min": 4.5,
+  "desc": "Botón primario"
+ },
+ {
+  "fg": "fg-on-action",
+  "bg": "action-hover",
+  "min": 4.5,
+  "desc": "Botón primario hover"
+ },
+ {
+  "fg": "fg-on-action",
+  "bg": "action-active",
+  "min": 4.5,
+  "desc": "Botón primario activo"
+ },
+ {
+  "fg": "accent-fg",
+  "bg": "bg-surface",
+  "min": 4.5,
+  "desc": "Eyebrow de módulo"
+ },
+ {
+  "fg": "accent-fg",
+  "bg": "accent-soft",
+  "min": 4.5,
+  "desc": "Badge acento"
+ },
+ {
+  "fg": "info",
+  "bg": "info-soft",
+  "min": 4.5,
+  "desc": "Badge info"
+ },
+ {
+  "fg": "review",
+  "bg": "review-soft",
+  "min": 4.5,
+  "desc": "Badge en aprobación"
+ },
+ {
+  "fg": "success",
+  "bg": "success-soft",
+  "min": 4.5,
+  "desc": "Badge éxito"
+ },
+ {
+  "fg": "warning",
+  "bg": "warning-soft",
+  "min": 4.5,
+  "desc": "Badge advertencia"
+ },
+ {
+  "fg": "danger",
+  "bg": "danger-soft",
+  "min": 4.5,
+  "desc": "Badge error"
+ },
+ {
+  "fg": "success",
+  "bg": "bg-surface",
+  "min": 4.5,
+  "desc": "Texto éxito"
+ },
+ {
+  "fg": "warning",
+  "bg": "bg-surface",
+  "min": 4.5,
+  "desc": "Texto advertencia"
+ },
+ {
+  "fg": "danger",
+  "bg": "bg-surface",
+  "min": 4.5,
+  "desc": "Texto error"
+ },
+ {
+  "fg": "fg-on-status",
+  "bg": "danger",
+  "min": 4.5,
+  "desc": "Botón destructivo"
+ },
+ {
+  "fg": "fg-on-status",
+  "bg": "danger-hover",
+  "min": 4.5,
+  "desc": "Botón destructivo hover"
+ },
+ {
+  "fg": "fg-on-status",
+  "bg": "success",
+  "min": 4.5,
+  "desc": "Badge sólido éxito"
+ },
+ {
+  "fg": "fg-on-status",
+  "bg": "warning",
+  "min": 4.5,
+  "desc": "Badge sólido advertencia"
+ },
+ {
+  "fg": "fg-on-nav",
+  "bg": "bg-nav",
+  "min": 4.5,
+  "desc": "Navegación activa"
+ },
+ {
+  "fg": "fg-on-nav",
+  "bg": "bg-nav-active",
+  "min": 4.5,
+  "desc": "Ítem activo"
+ },
+ {
+  "fg": "fg-on-nav-muted",
+  "bg": "bg-nav",
+  "min": 4.5,
+  "desc": "Navegación inactiva"
+ },
+ {
+  "fg": "fg-on-nav-muted",
+  "bg": "bg-nav-hover",
+  "min": 4.5,
+  "desc": "Navegación hover"
+ },
+ {
+  "fg": "nav-badge-fg",
+  "bg": "nav-badge-bg",
+  "min": 4.5,
+  "desc": "Contador en navegación"
+ },
+ {
+  "fg": "fg-on-inverse",
+  "bg": "bg-inverse",
+  "min": 4.5,
+  "desc": "Tooltip"
+ },
+ {
+  "fg": "fg-default",
+  "bg": "bg-selected",
+  "min": 4.5,
+  "desc": "Fila seleccionada"
+ },
+ {
+  "fg": "border-strong",
+  "bg": "bg-surface",
+  "min": 3.0,
+  "desc": "Borde de control (1.4.11)"
+ },
+ {
+  "fg": "border-focus",
+  "bg": "bg-surface",
+  "min": 3.0,
+  "desc": "Indicador de foco / superficie"
+ },
+ {
+  "fg": "border-focus",
+  "bg": "bg-canvas",
+  "min": 3.0,
+  "desc": "Indicador de foco / fondo"
+ },
+ {
+  "fg": "action",
+  "bg": "bg-surface",
+  "min": 3.0,
+  "desc": "Botón primario vs superficie"
+ },
+ {
+  "fg": "nav-indicator",
+  "bg": "bg-nav",
+  "min": 3.0,
+  "desc": "Indicador de ubicación"
+ },
+ {
+  "fg": "danger",
+  "bg": "bg-surface",
+  "min": 3.0,
+  "desc": "Borde de error"
+ },
+ {
+  "fg": "nav-indicator",
+  "bg": "bg-nav-active",
+  "min": 3,
+  "desc": "Indicador sobre ítem activo"
+ },
+ {
+  "fg": "fg-on-status",
+  "bg": "info",
+  "min": 4.5,
+  "desc": "Badge sólido info"
+ },
+ {
+  "fg": "fg-on-status",
+  "bg": "review",
+  "min": 4.5,
+  "desc": "Badge sólido en aprobación"
+ },
+ {
+  "fg": "fg-on-inverse",
+  "bg": "bg-inverse",
+  "min": 4.5,
+  "desc": "Badge de marca (Emitida)"
+ },
+ {
+  "fg": "fg-on-nav",
+  "bg": "bg-nav",
+  "min": 3,
+  "desc": "Foco sobre sidebar (contorno blanco)"
+ }
+]

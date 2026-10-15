@@ -1,0 +1,109 @@
+{
+  "$comment": "Capa 1 (primitivos) por variante y tema. Fuente única: build.mjs genera palettes.generated.css y el catálogo calcula contrastes desde aquí.",
+  "status": {
+    "light": {
+      "success": "#15803D", "successSoft": "#ECF7EF",
+      "warning": "#B45309", "warningSoft": "#FDF4E7",
+      "danger": "#B91C1C", "dangerHover": "#991B1B", "dangerSoft": "#FCEDED",
+      "onStatus": "#FFFFFF"
+    },
+    "dark": {
+      "success": "#4ADE80", "successSoft": "#11291C",
+      "warning": "#F5B14C", "warningSoft": "#33250F",
+      "danger": "#F87171", "dangerHover": "#FCA5A5", "dangerSoft": "#3A1717",
+      "onStatus": "#0B1220"
+    }
+  },
+  "variants": {
+    "corporate": {
+      "name": "A · Corporate Refined",
+      "summary": "Azul marino institucional, azul de acción y turquesa moderado. Bordes suaves y sombras mínimas.",
+      "shape": { "radius": "soft", "shadow": "subtle", "density": "compact" },
+      "type": { "sans": "\"IBM Plex Sans\", \"Segoe UI\", system-ui, sans-serif", "label": "IBM Plex Sans", "heading": 600, "pageSize": "22px", "pageTracking": "-0.01em", "moduleTracking": "0.07em" },
+      "light": {
+        "canvas": "#F3F6FA", "surface": "#FFFFFF", "subtle": "#F8FAFC", "muted": "#EEF2F6", "selected": "#EAF1FD",
+        "nav": "#142B49", "navHover": "#1C3A60", "navActive": "#26497A", "navFg": "#FFFFFF", "navFgMuted": "#B3C3D8", "navBorder": "#2A4064",
+        "navIndicator": "#2DD4BF", "navBadgeBg": "#CCFBF1", "navBadgeFg": "#0F3D3A",
+        "inverse": "#0B1A2E", "onInverse": "#FFFFFF",
+        "fg": "#1E293B", "fgMuted": "#5B6B80", "fgSubtle": "#8392A6", "link": "#1D4ED8", "brand": "#142B49",
+        "border": "#E2E8F0", "borderStrong": "#8392A6", "focus": "#2563EB",
+        "action": "#2563EB", "actionHover": "#1D4ED8", "actionActive": "#1E40AF", "onAction": "#FFFFFF", "actionSoft": "#EAF1FD", "actionFg": "#1D4ED8",
+        "accent": "#0D9488", "accentFg": "#0F766E", "accentSoft": "#E7F5F3",
+        "info": "#1D4ED8", "infoSoft": "#EAF1FD", "review": "#6D28D9", "reviewSoft": "#F3EEFD",
+        "overlay": "rgb(11 26 46 / 0.45)", "shadowRgb": "20 43 73"
+      },
+      "dark": {
+        "canvas": "#0E1726", "surface": "#152238", "subtle": "#182740", "muted": "#1F3150", "selected": "#1B3260",
+        "nav": "#0A1322", "navHover": "#13213A", "navActive": "#1C3050", "navFg": "#FFFFFF", "navFgMuted": "#A3B4CA", "navBorder": "#1E2D47",
+        "navIndicator": "#2DD4BF", "navBadgeBg": "#2DD4BF", "navBadgeFg": "#05211F",
+        "inverse": "#E6ECF4", "onInverse": "#0E1726",
+        "fg": "#E6ECF4", "fgMuted": "#A3B4CA", "fgSubtle": "#7487A1", "link": "#8CBBFF", "brand": "#E6ECF4",
+        "border": "#26375A", "borderStrong": "#6A80A3", "focus": "#8CBBFF",
+        "action": "#2F6AE0", "actionHover": "#2559C4", "actionActive": "#1F4CAB", "onAction": "#FFFFFF", "actionSoft": "#1B3260", "actionFg": "#A9CBFF",
+        "accent": "#2BB3A6", "accentFg": "#5ED3C6", "accentSoft": "#12352F",
+        "info": "#8CBBFF", "infoSoft": "#1B3260", "review": "#C4B0FC", "reviewSoft": "#2A2050",
+        "overlay": "rgb(0 0 0 / 0.6)", "shadowRgb": "0 0 0"
+      }
+    },
+    "premium": {
+      "name": "B · Modern Premium",
+      "summary": "Azul profundo e índigo, superficies limpias, esquinas redondeadas y jerarquía tipográfica más marcada.",
+      "shape": { "radius": "round", "shadow": "moderate", "density": "balanced" },
+      "type": { "sans": "\"Manrope\", \"Segoe UI\", system-ui, sans-serif", "label": "Manrope", "heading": 700, "pageSize": "24px", "pageTracking": "-0.02em", "moduleTracking": "0.12em" },
+      "light": {
+        "canvas": "#F4F5FB", "surface": "#FFFFFF", "subtle": "#F9FAFD", "muted": "#EDEFF7", "selected": "#EEF0FE",
+        "nav": "#12183A", "navHover": "#1C2350", "navActive": "#2A3272", "navFg": "#FFFFFF", "navFgMuted": "#B6BDE2", "navBorder": "#262D58",
+        "navIndicator": "#818CF8", "navBadgeBg": "#E0E7FF", "navBadgeFg": "#1E1B4B",
+        "inverse": "#0B0F26", "onInverse": "#FFFFFF",
+        "fg": "#171B34", "fgMuted": "#555C78", "fgSubtle": "#8A90A8", "link": "#4338CA", "brand": "#12183A",
+        "border": "#E3E6F0", "borderStrong": "#848AA5", "focus": "#4F46E5",
+        "action": "#4F46E5", "actionHover": "#4338CA", "actionActive": "#3730A3", "onAction": "#FFFFFF", "actionSoft": "#EEF0FE", "actionFg": "#4338CA",
+        "accent": "#0891B2", "accentFg": "#0E7490", "accentSoft": "#E6F6FA",
+        "info": "#1D4ED8", "infoSoft": "#EAF1FD", "review": "#A21CAF", "reviewSoft": "#FAEEFB",
+        "overlay": "rgb(11 15 38 / 0.5)", "shadowRgb": "18 24 58"
+      },
+      "dark": {
+        "canvas": "#0B0E1F", "surface": "#131833", "subtle": "#161C3A", "muted": "#1E2449", "selected": "#262D66",
+        "nav": "#080B1A", "navHover": "#11163A", "navActive": "#1E2456", "navFg": "#FFFFFF", "navFgMuted": "#A7AED4", "navBorder": "#1A1F40",
+        "navIndicator": "#818CF8", "navBadgeBg": "#A5B4FC", "navBadgeFg": "#13113A",
+        "inverse": "#E7E9F5", "onInverse": "#0B0E1F",
+        "fg": "#E7E9F5", "fgMuted": "#A4AAC8", "fgSubtle": "#767D9E", "link": "#B4BEFD", "brand": "#E7E9F5",
+        "border": "#262C55", "borderStrong": "#646B95", "focus": "#A5B4FC",
+        "action": "#5850EC", "actionHover": "#4B43D8", "actionActive": "#3F37BF", "onAction": "#FFFFFF", "actionSoft": "#262D66", "actionFg": "#C3CBFE",
+        "accent": "#22B8D6", "accentFg": "#67D6EC", "accentSoft": "#0E3340",
+        "info": "#93B4FB", "infoSoft": "#1B2B5C", "review": "#EFA2F8", "reviewSoft": "#3A1840",
+        "overlay": "rgb(0 0 0 / 0.62)", "shadowRgb": "0 0 0"
+      }
+    },
+    "executive": {
+      "name": "C · Minimal Executive",
+      "summary": "Grafito y azul oscuro sobre fondos neutros. Superficies planas, bordes finos y poco redondeo.",
+      "shape": { "radius": "straight", "shadow": "none", "density": "compact" },
+      "type": { "sans": "\"Public Sans\", \"Segoe UI\", system-ui, sans-serif", "label": "Public Sans", "heading": 600, "pageSize": "22px", "pageTracking": "-0.005em", "moduleTracking": "0.08em" },
+      "light": {
+        "canvas": "#F4F5F6", "surface": "#FFFFFF", "subtle": "#FAFAFB", "muted": "#EEEFF1", "selected": "#E8EEF8",
+        "nav": "#1E2227", "navHover": "#2A2F36", "navActive": "#363C45", "navFg": "#FFFFFF", "navFgMuted": "#B9BEC6", "navBorder": "#30353C",
+        "navIndicator": "#93B4F5", "navBadgeBg": "#E2E8F4", "navBadgeFg": "#1E2227",
+        "inverse": "#16191D", "onInverse": "#FFFFFF",
+        "fg": "#16191D", "fgMuted": "#545B65", "fgSubtle": "#8A9099", "link": "#1E40AF", "brand": "#1E2227",
+        "border": "#DDE0E4", "borderStrong": "#858B94", "focus": "#1E40AF",
+        "action": "#1E3A8A", "actionHover": "#1E40AF", "actionActive": "#172E6E", "onAction": "#FFFFFF", "actionSoft": "#E8EEF8", "actionFg": "#1E3A8A",
+        "accent": "#3E5C76", "accentFg": "#3E5C76", "accentSoft": "#E9EEF3",
+        "info": "#1E40AF", "infoSoft": "#E8EEF8", "review": "#5B21B6", "reviewSoft": "#F1ECFB",
+        "overlay": "rgb(22 25 29 / 0.5)", "shadowRgb": "22 25 29"
+      },
+      "dark": {
+        "canvas": "#111315", "surface": "#181B1F", "subtle": "#1C1F24", "muted": "#24282E", "selected": "#1E2A42",
+        "nav": "#0C0E10", "navHover": "#181B1F", "navActive": "#262A31", "navFg": "#FFFFFF", "navFgMuted": "#A6ACB5", "navBorder": "#202328",
+        "navIndicator": "#93B4F5", "navBadgeBg": "#93B4F5", "navBadgeFg": "#0C1526",
+        "inverse": "#E8EAED", "onInverse": "#111315",
+        "fg": "#E8EAED", "fgMuted": "#A4AAB3", "fgSubtle": "#757B84", "link": "#9DBBF7", "brand": "#E8EAED",
+        "border": "#2B2F35", "borderStrong": "#68707B", "focus": "#9DBBF7",
+        "action": "#3A68DC", "actionHover": "#3159C2", "actionActive": "#2A4DA8", "onAction": "#FFFFFF", "actionSoft": "#1E2A42", "actionFg": "#AFC6F8",
+        "accent": "#7C9AB8", "accentFg": "#A3BBD3", "accentSoft": "#1F2A35",
+        "info": "#9DBBF7", "infoSoft": "#1E2A42", "review": "#C4B0FC", "reviewSoft": "#2A2342",
+        "overlay": "rgb(0 0 0 / 0.62)", "shadowRgb": "0 0 0"
+      }
+    }
+  }
+}

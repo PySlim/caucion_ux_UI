@@ -1,0 +1,36 @@
+{
+  "name": "caucion-design-system",
+  "version": "1.2.0",
+  "description": "CAUCIÓN Design System V1.2 (Corporate Refined) y prototipo navegable. Datos ficticios.",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "tokens": "node scripts/build-tokens.mjs",
+    "dev": "node scripts/dev.mjs",
+    "build": "node build.mjs",
+    "pretypecheck": "node scripts/build-tokens.mjs",
+    "typecheck": "tsc -p tsconfig.json",
+    "check:contrast": "node scripts/check-contrast.mjs",
+    "check:icons": "node scripts/check-icons.mjs",
+    "test:ui": "node scripts/test-ui.mjs",
+    "verify": "npm run check:contrast && npm run check:icons && npm run typecheck && npm run build && npm run test:ui"
+  },
+  "dependencies": {
+    "clsx": "2.1.1",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "react-icons": "5.7.0",
+    "tailwind-merge": "3.6.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "esbuild": "0.28.2",
+    "playwright": "1.56.0",
+    "tailwindcss": "4.3.3",
+    "typescript": "6.0.3"
+  }
+}
