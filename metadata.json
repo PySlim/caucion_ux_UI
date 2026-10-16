@@ -1,0 +1,8 @@
+{
+  "name": "CAUCIÓN Design System",
+  "description": "CAUCIÓN Design System V1.2 (Corporate Refined) y prototipo navegable para gestión de cauciones y garantías.",
+  "permissions": [],
+  "capabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
